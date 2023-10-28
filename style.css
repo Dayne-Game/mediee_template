@@ -8,8 +8,21 @@ body {
     background: #f4f4f4;
 }
 
+.card-header {
+    background-color: #fff !important;
+    border-bottom: 1px solid transparent;
+}
+
 .list-group-flush {
     border-width: 0;
+}
+
+.list-group-item {
+    color: #6C757D;
+
+    padding: 13px;
+
+    font-size: 15px;
 }
 
 .main_container {
@@ -19,7 +32,9 @@ body {
 }
 
 .main_content {
-    padding: 1rem;
+    padding: 2.5rem 2.5rem 1.5rem;
+    flex: 1;
+    direction: ltr;
 }
 
 .sidebar.close~.main_container {
