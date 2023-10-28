@@ -8,6 +8,10 @@ body {
     background: #f4f4f4;
 }
 
+.list-group-flush {
+    border-width: 0;
+}
+
 .main_container {
     width: calc(100% - 260px);
     margin-left: 260px;
@@ -31,6 +35,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    height: 61.5px;
 }
 
 .sidebar_btn_container {
@@ -72,24 +78,95 @@ body {
     top: 0;
     left: 0;
 
-    padding: 0.5rem;
-
     background: #f64f64;
     z-index: 100;
     transition: all 0.4s ease;
 }
 
 .sidebar_brand {
+    display: flex;
+    align-items: center;
+
+    padding: 0.5rem;
+    
+    height: 61.5px;
     text-align: center;
+
+}
+
+.sidebar.close .sidebar_brand {
+    opacity: 0;
+    pointer-events: none;
+    overflow: visible;
 }
 
 .sidebar_brand .title {
     font-size: 25px;
     font-weight: 500;
 
+    width: 100%;
+
     color: #fff;
+    white-space: nowrap;
 }
 
 .sidebar.close {
     width: 0px;
+    padding: 0;
+}
+
+.sidebar_content {
+    margin-top: 25px;
+}
+
+.sidebar.close .sidebar_content {
+    opacity: 0;
+    pointer-events: none;
+    overflow: visible;
+}
+
+.sidebar .sidebar_nav {
+    list-style: none;
+    padding: 0;
+}
+
+.menu_title {
+    color: #f4f4f4;
+    font-size: 15px;
+    margin-left: 30px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.nav_link {
+    display: flex;
+    align-items: center;
+
+    color: #fff;
+
+    text-decoration: none;
+}
+
+.nav_link.active {
+    background: rgba(0, 0, 0, 0.08)
+}
+
+.nav_link:hover {
+    background: rgba(0, 0, 0, 0.08);
+    color: #fff;
+}
+
+.nav_link i {
+    height: 50px;
+    min-width: 78px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.nav_link .link_name {
+    font-size: 18px;
+    font-weight: 400;
 }
