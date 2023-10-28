@@ -14,6 +14,10 @@ body {
     transition: all 0.4s ease;
 }
 
+.main_content {
+    padding: 1rem;
+}
+
 .sidebar.close~.main_container {
     width: 100%;
     margin-left: 0px;
@@ -21,19 +25,43 @@ body {
 
 .topnav {
     width: 100%;
-    height: 60px;
 
     background: #fff;
 
     display: flex;
     align-items: center;
-
-    padding: 1rem;
+    justify-content: space-between;
 }
 
-.topnav .sidebar_close_btn {
-    font-size: 35px;
-} 
+.sidebar_btn_container {
+    display: flex;
+    align-items: center;
+    padding: 0.8rem;
+}
+
+.sidebar_btn_container i {
+    font-size: 36px;
+    margin: 0;
+}
+
+.user_profile_container {
+    display: flex;
+    align-items: center;
+    padding: 0.8rem;
+}
+
+.user_profile_container img {
+    height: 40px;
+    margin-top: -2px;
+    margin-bottom: -2px;
+    margin-right: 10px;
+    border-radius: 4px;
+}
+
+.user_profile_container i {
+    font-size: 20px;
+    /* margin-left: 5px; */
+}
 
 
 .sidebar {
@@ -44,9 +72,22 @@ body {
     top: 0;
     left: 0;
 
+    padding: 0.5rem;
+
     background: #f64f64;
     z-index: 100;
     transition: all 0.4s ease;
+}
+
+.sidebar_brand {
+    text-align: center;
+}
+
+.sidebar_brand .title {
+    font-size: 25px;
+    font-weight: 500;
+
+    color: #fff;
 }
 
 .sidebar.close {
